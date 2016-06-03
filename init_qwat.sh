@@ -237,6 +237,8 @@ psql -v ON_ERROR_STOP=1 -v SRID=$SRID -f ordinary_data/leak/od_leak.sql
 
 psql -v ON_ERROR_STOP=1 -v SRID=$SRID -f ordinary_data/valve/tr_valve_pipe.sql
 
+psql -v ON_ERROR_STOP=1 -v SRID=$SRID -f ordinary_data/extra/od_extra.sql
+
 
 SRID=$SRID ./ordinary_data/views/insert_views.sh
 
