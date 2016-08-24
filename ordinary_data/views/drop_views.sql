@@ -44,7 +44,7 @@ drop view if exists qwat_od.vw_installation_source;
 drop view if exists qwat_od.vw_installation_tank;
 drop view if exists qwat_od.vw_installation_treatment;
 
-drop view if exists qwat_od.vw_qwat_node;
+drop view if exists qwat_od.vw_all_nodes;
 drop view if exists qwat_od.vw_qwat_network_element;
 drop view if exists qwat_od.vw_qwat_installation;
 

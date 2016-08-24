@@ -43,7 +43,7 @@ children:
         read: COALESCE(element.orientation, -node._pipe_orientation)
 
 merge_view:
-  name: vw_qwat_node
+  name: vw_all_nodes
   allow_type_change: false
   allow_parent_only: true
 """

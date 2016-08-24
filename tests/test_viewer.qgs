@@ -6,7 +6,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_element_valve20151116081440982" name="vw_element_valve">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qwat_node20151102084555428" name="vw_qwat_node">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qwat_node20151102084555428" name="vw_all_nodes">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="pipe20151102084555475" name="pipe">
@@ -51,7 +51,7 @@
         <legendlayerfile isInOverview="0" layerid="vw_element_valve20151116081440982" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qwat_node" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_all_nodes" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="vw_qwat_node20151102084555428" visible="1"/>
       </filegroup>
@@ -1098,13 +1098,13 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qwat_node20151102084555428</id>
-      <datasource>service='qwat_test' sslmode=disable key='id' srid=21781 type=Point table="qwat_od"."vw_qwat_node" (geometry) sql=</datasource>
+      <datasource>service='qwat_test' sslmode=disable key='id' srid=21781 type=Point table="qwat_od"."vw_all_nodes" (geometry) sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qwat_node</layername>
+      <layername>vw_all_nodes</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>

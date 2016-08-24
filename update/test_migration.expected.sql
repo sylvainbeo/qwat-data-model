@@ -70,7 +70,7 @@
 "qwat_od","vw_protectionzone"
 "qwat_od","vw_qwat_installation"
 "qwat_od","vw_qwat_network_element"
-"qwat_od","vw_qwat_node"
+"qwat_od","vw_all_nodes"
 "qwat_od","vw_remote"
 "qwat_od","vw_search_view"
 "qwat_od","vw_subscriber_pipe_relation"
@@ -2822,46 +2822,46 @@
 "qwat_od","vw_qwat_network_element","water_meter",,"YES","boolean",,,,
 "qwat_od","vw_qwat_network_element","year",,"YES","smallint",,"16","2",
 "qwat_od","vw_qwat_network_element","year_end",,"YES","smallint",,"16","2",
-"qwat_od","vw_qwat_node","altitude",,"YES","numeric",,"10","10",
-"qwat_od","vw_qwat_node","fk_distributor",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_district",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_folder",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_locationtype",,"YES","ARRAY",,,,
-"qwat_od","vw_qwat_node","fk_object_reference",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_precision",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_precisionalti",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_pressurezone",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","fk_printmap",,"YES","ARRAY",,,,
-"qwat_od","vw_qwat_node","fk_status",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","geometry",,"YES","USER-DEFINED",,,,
-"qwat_od","vw_qwat_node","geometry_alt1",,"YES","USER-DEFINED",,,,
-"qwat_od","vw_qwat_node","_geometry_alt1_used",,"YES","boolean",,,,
-"qwat_od","vw_qwat_node","geometry_alt2",,"YES","USER-DEFINED",,,,
-"qwat_od","vw_qwat_node","_geometry_alt2_used",,"YES","boolean",,,,
-"qwat_od","vw_qwat_node","id",,"YES","integer",,"32","2",
-"qwat_od","vw_qwat_node","identification",,"YES","character varying","50",,,
-"qwat_od","vw_qwat_node","label_1_rotation",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","label_1_text",,"YES","character varying","120",,,
-"qwat_od","vw_qwat_node","label_1_visible",,"YES","smallint",,"16","2",
-"qwat_od","vw_qwat_node","label_1_x",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","label_1_y",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","label_2_rotation",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","label_2_text",,"YES","character varying","120",,,
-"qwat_od","vw_qwat_node","label_2_visible",,"YES","smallint",,"16","2",
-"qwat_od","vw_qwat_node","label_2_x",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","label_2_y",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","node_type",,"YES","USER-DEFINED",,,,
-"qwat_od","vw_qwat_node","orientation",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","_pipe_node_type",,"YES","USER-DEFINED",,,,
-"qwat_od","vw_qwat_node","_pipe_orientation",,"YES","double precision",,"53","2",
-"qwat_od","vw_qwat_node","_pipe_schema_visible",,"YES","boolean",,,,
-"qwat_od","vw_qwat_node","_printmaps",,"YES","text",,,,
-"qwat_od","vw_qwat_node","remark",,"YES","text",,,,
-"qwat_od","vw_qwat_node","schema_force_visible",,"YES","boolean",,,,
-"qwat_od","vw_qwat_node","update_geometry_alt1",,"YES","boolean",,,,
-"qwat_od","vw_qwat_node","update_geometry_alt2",,"YES","boolean",,,,
-"qwat_od","vw_qwat_node","year",,"YES","smallint",,"16","2",
-"qwat_od","vw_qwat_node","year_end",,"YES","smallint",,"16","2",
+"qwat_od","vw_all_nodes","altitude",,"YES","numeric",,"10","10",
+"qwat_od","vw_all_nodes","fk_distributor",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_district",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_folder",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_locationtype",,"YES","ARRAY",,,,
+"qwat_od","vw_all_nodes","fk_object_reference",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_precision",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_precisionalti",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_pressurezone",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","fk_printmap",,"YES","ARRAY",,,,
+"qwat_od","vw_all_nodes","fk_status",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","geometry",,"YES","USER-DEFINED",,,,
+"qwat_od","vw_all_nodes","geometry_alt1",,"YES","USER-DEFINED",,,,
+"qwat_od","vw_all_nodes","_geometry_alt1_used",,"YES","boolean",,,,
+"qwat_od","vw_all_nodes","geometry_alt2",,"YES","USER-DEFINED",,,,
+"qwat_od","vw_all_nodes","_geometry_alt2_used",,"YES","boolean",,,,
+"qwat_od","vw_all_nodes","id",,"YES","integer",,"32","2",
+"qwat_od","vw_all_nodes","identification",,"YES","character varying","50",,,
+"qwat_od","vw_all_nodes","label_1_rotation",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","label_1_text",,"YES","character varying","120",,,
+"qwat_od","vw_all_nodes","label_1_visible",,"YES","smallint",,"16","2",
+"qwat_od","vw_all_nodes","label_1_x",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","label_1_y",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","label_2_rotation",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","label_2_text",,"YES","character varying","120",,,
+"qwat_od","vw_all_nodes","label_2_visible",,"YES","smallint",,"16","2",
+"qwat_od","vw_all_nodes","label_2_x",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","label_2_y",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","node_type",,"YES","USER-DEFINED",,,,
+"qwat_od","vw_all_nodes","orientation",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","_pipe_node_type",,"YES","USER-DEFINED",,,,
+"qwat_od","vw_all_nodes","_pipe_orientation",,"YES","double precision",,"53","2",
+"qwat_od","vw_all_nodes","_pipe_schema_visible",,"YES","boolean",,,,
+"qwat_od","vw_all_nodes","_printmaps",,"YES","text",,,,
+"qwat_od","vw_all_nodes","remark",,"YES","text",,,,
+"qwat_od","vw_all_nodes","schema_force_visible",,"YES","boolean",,,,
+"qwat_od","vw_all_nodes","update_geometry_alt1",,"YES","boolean",,,,
+"qwat_od","vw_all_nodes","update_geometry_alt2",,"YES","boolean",,,,
+"qwat_od","vw_all_nodes","year",,"YES","smallint",,"16","2",
+"qwat_od","vw_all_nodes","year_end",,"YES","smallint",,"16","2",
 "qwat_od","vw_remote","destination",,"YES","character varying","150",,,
 "qwat_od","vw_remote","distributor",,"YES","character varying","30",,,
 "qwat_od","vw_remote","folder",,"YES","character varying","50",,,
@@ -6131,7 +6131,7 @@ UNION
      LEFT JOIN qwat_od.samplingpoint samplingpoint ON ((element.id = samplingpoint.id)))
      LEFT JOIN qwat_od.valve valve ON ((element.id = valve.id)))
      LEFT JOIN qwat_od.meter meter ON ((element.id = meter.id)));"
-"vw_qwat_node"," SELECT
+"vw_all_nodes"," SELECT
         CASE
             WHEN (element.id IS NOT NULL) THEN 'element'::qwat_od.node_type
             ELSE 'node'::qwat_od.node_type
@@ -6828,9 +6828,9 @@ UNION
 "tr_vw_qwat_network_element_delete"
 "tr_vw_qwat_network_element_insert"
 "tr_vw_qwat_network_element_update"
-"tr_vw_qwat_node_delete"
-"tr_vw_qwat_node_insert"
-"tr_vw_qwat_node_update"
+"tr_vw_all_nodes_delete"
+"tr_vw_all_nodes_insert"
+"tr_vw_all_nodes_update"
 "valve_handle_altitude_insert_trigger"
 "valve_handle_altitude_update_trigger"
 "valve_node_set_type"
@@ -17356,7 +17356,7 @@ END
 			-- check it is not associated to any pipe (including inactive ones)
 			IF _node_id NOT IN (SELECT fk_node_a FROM qwat_od.pipe UNION SELECT fk_node_b FROM qwat_od.pipe) THEN
 				-- if it is not something else
-				IF ( SELECT node_type = 'node'::qwat_od.node_type FROM qwat_od.vw_qwat_node WHERE id = _node_id) THEN
+				IF ( SELECT node_type = 'node'::qwat_od.node_type FROM qwat_od.vw_all_nodes WHERE id = _node_id) THEN
 					-- delete it
 					RAISE NOTICE 'Delete node %' , _node_id;
 					DELETE FROM qwat_od.node WHERE id = _node_id; -- delete on table level for safety (do not delete on the merge view)
@@ -17836,7 +17836,7 @@ from
 "qwat_od","vw_protectionzone","SELECT"
 "qwat_od","vw_qwat_installation","SELECT"
 "qwat_od","vw_qwat_network_element","SELECT"
-"qwat_od","vw_qwat_node","SELECT"
+"qwat_od","vw_all_nodes","SELECT"
 "qwat_od","vw_remote","SELECT"
 "qwat_od","vw_search_view","SELECT"
 "qwat_od","vw_subscriber_pipe_relation","SELECT"
