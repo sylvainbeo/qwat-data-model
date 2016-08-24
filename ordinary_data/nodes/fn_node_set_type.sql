@@ -45,7 +45,7 @@ $BODY$
 			-- check it is not associated to any pipe (including inactive ones)
 			IF _node_id NOT IN (SELECT fk_node_a FROM qwat_od.pipe UNION SELECT fk_node_b FROM qwat_od.pipe) THEN
 				-- if it is not something else
-				IF ( SELECT node_type = 'node'::qwat_od.node_type FROM qwat_od.vw_qwat_node WHERE id = _node_id) THEN
+				IF ( SELECT node_type = 'node'::qwat_od.node_type FROM qwat_od.vw_all_nodes WHERE id = _node_id) THEN
 					-- delete it
 					RAISE NOTICE 'Delete node %' , _node_id;
 					DELETE FROM qwat_od.node WHERE id = _node_id; -- delete on table level for safety (do not delete on the merge view)
