@@ -21,6 +21,8 @@ pkey_value: NEW.id
 
 allow_type_change: false
 
+generate_child_views: false
+
 schema: qwat_od
 
 children:
