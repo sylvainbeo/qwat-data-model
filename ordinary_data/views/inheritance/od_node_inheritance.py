@@ -13,14 +13,13 @@ else:
 
 
 qwat_node_element = """
-table: qwat_od.node
 alias: node
+table: qwat_od.node
+schema: qwat_od
 pkey: id
 pkey_value: qwat_od.fn_node_create(NEW.geometry)
 pkey_value_create_entry: true
-schema: qwat_od
 generate_child_views: true
-
 custom_delete: "PERFORM qwat_od.fn_node_set_type(OLD.id)"
 
 trigger_pre: >

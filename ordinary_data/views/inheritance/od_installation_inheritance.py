@@ -16,14 +16,13 @@ else:
 qwat_installations = """
 alias: installation
 table: qwat_od.installation
+schema: qwat_od
 pkey: id
 pkey_value: NEW.id
-
 allow_type_change: false
-
 generate_child_views: false
 
-schema: qwat_od
+
 
 children:
   chamber:

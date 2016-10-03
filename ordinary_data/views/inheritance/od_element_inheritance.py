@@ -16,9 +16,9 @@ else:
 qwat_elements = """
 alias: element
 table: qwat_od.vw_node_element
+schema: qwat_od
 pkey: id
 pkey_value: NEW.id
-schema: qwat_od
 generate_child_views: true
 
 children:
