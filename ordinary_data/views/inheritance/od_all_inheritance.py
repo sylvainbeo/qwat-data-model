@@ -20,6 +20,7 @@ pkey_value: qwat_od.fn_node_create(NEW.geometry)
 pkey_value_create_entry: true
 schema: qwat_od
 generate_child_views: True
+exec_order: 2
 
 custom_delete: "PERFORM qwat_od.fn_node_set_type(OLD.id)"
 
@@ -37,53 +38,62 @@ trigger_pre: >
 
 children:
   element:
-    table: qwat_od.network_element
+
+    c_table: qwat_od.network_element
     pkey: id
-    alter:
+    c_alter:
       orientation:
         read: COALESCE(element.orientation, -node._pipe_orientation)
+
     alias: element
     table: qwat_od.vw_node_element
-    pkey: id
     pkey_value: NEW.id
     schema: qwat_od
     generate_child_views: True
+    exec_order: 3
+
 
     children:
         installation:
-            table: qwat_od.vw_qwat_installation
+            c_table: qwat_od.vw_qwat_installation
             pkey: id
             alias: installation
             table: qwat_od.installation
             pkey: id
             pkey_value: NEW.id
-            generate_child_views: False
             allow_type_change: false
-
             schema: qwat_od
+            generate_child_views: False
+            exec_order: 1
 
             children:
                 chamber:
                     table: qwat_od.chamber
+                    c_table: qwat_od.chamber
                     pkey: id
 
                 pressurecontrol:
                     table: qwat_od.pressurecontrol
+                    c_table: qwat_od.pressurecontrol
                     pkey: id
 
                 pump:
                     table: qwat_od.pump
+                    c_table: qwat_od.pump
                     pkey: id
 
                 source:
                     table: qwat_od.source
+                    c_table: qwat_od.source
                     pkey: id
 
                 tank:
                     table: qwat_od.tank
+                    c_table: qwat_od.tank
                     pkey: id
 
                 treatment:
+                    c_table: qwat_od.treatment
                     table: qwat_od.treatment
                     pkey: id
 
@@ -92,25 +102,30 @@ children:
                 allow_type_change: false
 
         hydrant:
+            c_table: qwat_od.hydrant
             table: qwat_od.hydrant
             pkey: id
 
         part:
+            c_table: qwat_od.part
             table: qwat_od.part
             pkey: id
-            alter:
+            c_alter:
                 fk_pipe:
                     write: qwat_od.fn_pipe_get_id(NEW.geometry)
 
         meter:
+            c_table: qwat_od.meter
             table: qwat_od.meter
             pkey: id
 
         subscriber:
+            c_table: qwat_od.subscriber
             table: qwat_od.subscriber
             pkey: id
 
         samplingpoint:
+            c_table: qwat_od.samplingpoint
             table: qwat_od.samplingpoint
             pkey: id
 
