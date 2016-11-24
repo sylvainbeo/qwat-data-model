@@ -145,7 +145,6 @@ children:
                 part: fk_pipe
                 subscriber: fk_pipe
 
-
 merge_view:
   name: vw_qwat_node
   allow_type_change: false
