@@ -152,4 +152,32 @@ merge_view:
   allow_parent_only: true
 """
 
+trigger_plan = """
+view: qwat_od.vw_node_element
+
+view: qwat_od.vw_element_installation
+  trig_for:
+    qwat_od.node
+    qwat_od.network_element
+    qwat_od.source
+    qwat_od.pump
+    qwat_od.tank
+    qwat_od.treatment
+    qwat_od.chamber
+    qwat_od.pressurecontrol
+
+view: qwat_od.vw_element_hydrant
+    trig_for:
+        qwat_od.node
+        qwat_od.network_element
+        hydrant
+        
+view: qwat_od.vw_element_samplingpoint
+view: qwat_od.vw_element_meter
+view: qwat_od.vw_element_subscriber
+view: qwat_od.vw_element_part
+
+
+"""
+
 print pgiv.PGInheritanceView(pg_service, qwat_node_element).sql_all()
