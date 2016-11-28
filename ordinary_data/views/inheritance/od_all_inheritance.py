@@ -51,6 +51,7 @@ children:
     schema: qwat_od
     generate_child_views: True
     exec_order: 3
+    trig_here: True
 
 
     children:
@@ -65,37 +66,44 @@ children:
             schema: qwat_od
             generate_child_views: False
             exec_order: 1
+            trig_here: True
 
             children:
                 chamber:
                     table: qwat_od.chamber
                     c_table: qwat_od.chamber
                     pkey: id
+                    generate_view: False
 
                 pressurecontrol:
                     table: qwat_od.pressurecontrol
                     c_table: qwat_od.pressurecontrol
                     pkey: id
+                    generate_view: False
 
                 pump:
                     table: qwat_od.pump
                     c_table: qwat_od.pump
                     pkey: id
+                    generate_view: False
 
                 source:
                     table: qwat_od.source
                     c_table: qwat_od.source
                     pkey: id
+                    generate_view: False
 
                 tank:
                     table: qwat_od.tank
                     c_table: qwat_od.tank
                     pkey: id
+                    generate_view: False
 
                 treatment:
                     c_table: qwat_od.treatment
                     table: qwat_od.treatment
                     pkey: id
+                    generate_view: False
 
             merge_view:
                 name: vw_qwat_installation
@@ -105,6 +113,7 @@ children:
             c_table: qwat_od.hydrant
             table: qwat_od.hydrant
             pkey: id
+            trig_here: True
 
         part:
             c_table: qwat_od.part
@@ -113,21 +122,25 @@ children:
             c_alter:
                 fk_pipe:
                     write: qwat_od.fn_pipe_get_id(NEW.geometry)
+            trig_here: True
 
         meter:
             c_table: qwat_od.meter
             table: qwat_od.meter
             pkey: id
+            trig_here: True
 
         subscriber:
             c_table: qwat_od.subscriber
             table: qwat_od.subscriber
             pkey: id
+            trig_here: True
 
         samplingpoint:
             c_table: qwat_od.samplingpoint
             table: qwat_od.samplingpoint
             pkey: id
+            trig_here: True
 
     merge_view:
         name: vw_qwat_network_element
