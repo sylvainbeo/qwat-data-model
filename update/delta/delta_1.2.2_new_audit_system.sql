@@ -352,3 +352,4 @@ DROP TRIGGER IF EXISTS audit_trigger_stm ON qwat_od.surveypoint;
 
 UPDATE qwat_sys.versions SET version = '1.2.2';
 
+
